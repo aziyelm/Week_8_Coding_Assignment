@@ -1,0 +1,162 @@
+/*
+Coding Steps:
+    -Style the website you made last week using CSS with the following requirements:
+    -Use only external CSS file (no internal or inline styling)
+    -Every element must be styled.
+    -Create style rules using class, id, and element selectors.
+*/
+
+/*adding a bg to each page*/
+html {
+    background: url(https://wallpaperforu.com/wp-content/uploads/2021/09/Kuromi-Wallpapers18.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-color: rgb(252, 192, 211);
+}
+
+/*body bg color and border*/
+body {
+    background-color: rgba(255,255,255, 0.9);
+    border-style: dashed;
+    border-color:  #ffe6b3 #b380ff #b3d9ff #99e699; 
+    border-width: 7px;
+    border-radius: 5px
+    
+}
+
+/*fonts for headers, divs, p, lists*/
+h1 {
+    font-family: "Annai MN";
+    color:pink;
+    text-shadow: 3px 2px 2px rgb(86, 85, 85);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+}
+
+h2 {
+    font-family: "Annai MN";
+    display: inline-block; width:100%;
+    text-decoration: dotted;
+    text-align: center;
+}
+
+div {
+    font-family: "Annai MN";
+}
+
+p {
+    font-family: "Arial Narrow";
+}
+
+ul {
+    font-family: "Arial Narrow";
+    list-style-position: inside;
+    list-style: none;
+    text-align: center;
+    margin-left: -50px;
+}
+
+ul li::before {
+    content: '✿ ';
+}
+
+/*changing the size of images*/
+img {
+    height: 120px;
+}
+
+/*centered links to each page*/
+.menu {
+    text-align: center;
+}
+
+/*overlay image of me with text*/
+.home {
+    position: relative;
+    width: 25%;
+    margin:0 auto
+}
+
+.myface {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(252, 192, 211);
+    border-radius: 50%;
+    
+}
+
+.home:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+/*end overlay*/
+
+/*creating columns in the about me page*/
+.about {
+    column-count: 2;
+    position:relative;
+    text-align: center;
+}
+
+/*Tables*/
+/*fonts, borders, sizing, colors, hover*/
+table, th, td {
+    font-family: "Arial Narrow";
+    border: solid;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    background-color: rgb(252, 192, 211);
+}
+
+tr:hover {
+    background-color: #ffe6b3;
+}
+
+
+/*ID styling*/
+
+#directmessage {
+    text-align: center;
+}
+
+/*form styling (font, sizing, etc)*/
+input {
+    font-family: "Arial Narrow";
+    text-align: center;
+}
+
+textarea {
+    font-family: "Arial Narrow";
+}
